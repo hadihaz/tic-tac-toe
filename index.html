@@ -1,43 +1,46 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="modal">
         <div class="status">
-            <h1>You won</h1>
-            <button type="button">Play Again</button>
+            <h1 class="statusHeader">You won</h1>
+            <button class="playAgain" type="button">Play Again</button>
         </div>
-        <div class="panel">  
-            <form action="">
-                <input type="text" name="" id="" placeholder="Enter Name">
+        <div class="panel">
+            <form id="form" action="">
+                <input type="text" name="name" id="name" class="name" placeholder="Enter Name" maxlength="8">
                 <div class="toggle">
-                    <input type="radio" id="choice1" name="choice" value="Read" checked>
+                    <input type="radio" id="choice1" name="choice" value="X" checked>
                     <label for="choice1" class="radio choice1">X</label>
 
-                    <input type="radio" id="choice2" name="choice" value="NotRead">
+                    <input type="radio" id="choice2" name="choice" value="O">
                     <label for="choice2" class="radio choice2">O</label>
                 </div>
-                <input type="submit" value="Start">
+                <input type="submit" value="Start" class="start">
             </form>
         </div>
     </div>
-    <h1>player round</h1>
+    <h1 class="Turns">Tic Tac Toe</h1>
     <div class="gameArea">
-        <div class="cell"></div>
-        <div class="cell">O</div>
-        <div class="cell">X</div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+        <div id="_0" class="cell"></div>
+        <div id="_1" class="cell"></div>
+        <div id="_2" class="cell"></div>
+        <div id="_3" class="cell"></div>
+        <div id="_4" class="cell"></div>
+        <div id="_5" class="cell"></div>
+        <div id="_6" class="cell"></div>
+        <div id="_7" class="cell"></div>
+        <div id="_8" class="cell"></div>
     </div>
-    
+
 </body>
 <script src="app.js"></script>
+
 </html>
